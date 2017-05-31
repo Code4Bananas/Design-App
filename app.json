@@ -1,7 +1,7 @@
 {
-  "name": "QuizLive Mobile Template",
-  "description": "Heroku mobile app template using Node and AngularJS",
-  "repository": "https://github.com/heroku/mobile-template1",
+  "name": "Rental App",
+  "description": "Heroku mobile app for renting using Node and AngularJS",
+  "repository": "https://github.com/Code4Bananas/Design-App",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["node", "express", "angularjs","ionic","force.com"],
   "addons": [
