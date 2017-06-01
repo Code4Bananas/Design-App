@@ -1,11 +1,11 @@
 /* Add your own CSS if you like */
 .button {
-    width: 130px;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .button.button-positive {
+    width: 130px;
     border:1px solid #25729a;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
