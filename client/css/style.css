@@ -40,7 +40,7 @@
 }
 
 .home-content h1 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
@@ -48,9 +48,6 @@
     color: transparent; 
     -webkit-background-clip: text;
     background-clip: text;
-    position: absolute;
-    top: 50%;
-    right: 50%;
 }
 
 .home-content .row-logo {
