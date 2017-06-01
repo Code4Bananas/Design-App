@@ -39,11 +39,12 @@
 }
 
 .home-content h1 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-style: inset;
+    border-width: medium;
 }
 
 .home-content .row-logo {
