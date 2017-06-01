@@ -43,6 +43,7 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    border-style: inset;
 }
 
 .home-content .row-logo {
