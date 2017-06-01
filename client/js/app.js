@@ -64,6 +64,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'LoginCtrl'
   })
 
+  .state('one', {
+    url: "/one",
+    templateURL: "templates/one.html",
+    controller: 'RegisterCtrl'
+  })
+  
+   .state('two', {
+   url: "/two",
+   templateURL: "templates/two.html",
+   controller: 'RegisterCtrl'
+  })
+  
+   .state('three', {
+   url: "/three",
+   templateURL: "templates/three.html",
+   controller: 'RegisterCtrl'
+  })
+  
+   .state('all', {
+   url: "/all",
+   templateURL: "templates/all.html",
+   controller: 'RegisterCtrl'
+  })
   // setup an abstract state for the tabs directive
   .state('tab', {
     url: "/tab",
