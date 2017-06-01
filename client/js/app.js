@@ -87,34 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    templateURL: "templates/all.html",
    controller: 'RegisterCtrl'
   })
-  // setup an abstract state for the tabs directive
-  .state('tab', {
-    url: "/tab",
-    abstract: true,
-    templateUrl: "templates/tabs-container.html"
-  })
 
-  // Each tab has its own nav history stack:
-
-  .state('tab.quiz', {
-    url: '/quiz',
-    views: {
-      'tab-quiz': {
-        templateUrl: 'templates/tab-quiz.html',
-        controller: 'QuizCtrl'
-      }
-    }
-  })
-
-  .state('tab.leaders', {
-    url: '/leaders',
-    views: {
-      'tab-leaders': {
-        templateUrl: 'templates/tab-leaders.html',
-        controller: 'LeadersCtrl'
-      }
-    }
-  });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/quiz');
