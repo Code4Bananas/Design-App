@@ -44,11 +44,11 @@
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
-    background: -webkit-linear-gradient(#D38312, #A83279);
+    background: -webkit-linear-gradient(#FFFFFF, #FFFFEE);
     color: transparent; 
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: #FF0000 0 0 10px;
+    text-shadow: #000000 0 0 10px;
 }
 
 .home-content .row-logo {
