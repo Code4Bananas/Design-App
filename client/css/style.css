@@ -48,6 +48,9 @@
     color: transparent; 
     -webkit-background-clip: text;
     background-clip: text;
+    position: absolute;
+    top: 50%;
+    right: 50%;
 }
 
 .home-content .row-logo {
