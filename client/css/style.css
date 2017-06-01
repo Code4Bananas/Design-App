@@ -40,12 +40,14 @@
 }
 
 .home-content h1 {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
     border-style: inset;
     border-width: medium;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
 }
 
 .home-content .row-logo {
