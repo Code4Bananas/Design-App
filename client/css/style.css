@@ -24,9 +24,6 @@
     background-image: -o-linear-gradient(top, #f62b2b, #d20202);
     background-image: linear-gradient(to bottom, #f62b2b, #d20202);
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
 }
 
 /* home screen */
