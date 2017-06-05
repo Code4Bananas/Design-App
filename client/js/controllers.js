@@ -188,18 +188,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OneCtrl', function($scope, $location) {
-    $scope.user = {
-    email: '',
-    password: ''
-})
-
-  $scope.$parent.logout_text = 'Register';
-
-  $scope.login = function() {
-    RegistrationService.login($scope.user.email, $scope.user.password).then(function() {
-      $location.path("/");
-    });
-  }
 
 })
 
