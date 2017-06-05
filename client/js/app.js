@@ -67,7 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('one', {
     url: "/one",
     templateURL: "templates/one.html",
-    controller: 'LoginCtrl'
+    controller: 'OneCtrl'
   })
   
    .state('two', {
@@ -90,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/quiz');
+  $urlRouterProvider.otherwise('/home');
 
   // Register middleware to ensure our auth token is passed to the server
   $httpProvider.interceptors.push('TokenInterceptor');
