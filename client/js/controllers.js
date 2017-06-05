@@ -193,6 +193,15 @@ angular.module('starter.controllers', [])
     password: ''
 })
 
+  $scope.$parent.logout_text = 'Register';
+
+  $scope.login = function() {
+    RegistrationService.login($scope.user.email, $scope.user.password).then(function() {
+      $location.path("/");
+    });
+  }
+
+})
 
 .controller('TwoCtrl', function($scope, $location) {
 
