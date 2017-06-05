@@ -188,7 +188,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OneCtrl', function($scope, $location) {
-  
+    $scope.user = {
+    email: '',
+    password: ''
 })
 
 
