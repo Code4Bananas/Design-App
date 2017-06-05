@@ -186,3 +186,22 @@ angular.module('starter.controllers', [])
 .controller('HomeCtrl', function($scope, $location) {
 
 })
+
+.controller('OneCtrl', function($scope, $location) {
+  
+})
+
+
+.controller('TwoCtrl', function($scope, $location) {
+
+})
+
+
+.controller('ThreeCtrl', function($scope, $location) {
+
+})
+
+
+.controller('AllCtrl', function($scope, $location) {
+
+})
