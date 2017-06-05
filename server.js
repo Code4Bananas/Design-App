@@ -58,6 +58,11 @@ app.get('/admin', auth.authenticate, auth.require_admin, function (req, res) {
 app.use('/register', auth.register);
 app.use('/login', auth.login);
 
+app.use('/one', auth.one);
+app.use('/two', auth.two);
+app.use('/three', auth.three);
+app.use('/all', auth.all);
+
 app.all('/resource/*', auth.authenticate);
 
 app.use('/resource', restful(models.Question, 'questions'));
