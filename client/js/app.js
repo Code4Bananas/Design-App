@@ -67,25 +67,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('one', {
     url: "/one",
     templateURL: "templates/one.html",
-    controller: 'HomeCtrl'
+    controller: 'OneCtrl'
   })
   
    .state('two', {
    url: "/two",
    templateURL: "templates/two.html",
-   controller: 'RegisterCtrl'
+   controller: 'TwoCtrl'
   })
   
    .state('three', {
    url: "/three",
    templateURL: "templates/three.html",
-   controller: 'HomeCtrl'
+   controller: 'ThreeCtrl'
   })
   
    .state('all', {
    url: "/all",
    templateURL: "templates/all.html",
-   controller: 'HomeCtrl'
+   controller: 'AllCtrl'
   })
 
 
