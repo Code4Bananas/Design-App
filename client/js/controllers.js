@@ -59,7 +59,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OneCtrl', function($scope, $location) {
-
+ $scope.login = function() {
+    RegistrationService.login($scope.user.email, $scope.user.password).then(function() {
+      $location.path("/");
+    });
+  }
 })
 
 .controller('TwoCtrl', function($scope, $location) {
