@@ -1,33 +1,30 @@
-<ion-view title="Login">
+<script id="new-task.html" type="text/ng-template">
 
-    <!--<ion-nav-buttons side="right">-->
-    <!--<a class="button button-clear" href="#/app/signup">Signup</a>-->
-    <!--</ion-nav-buttons>-->
+  <div class="modal">
 
-    <ion-content has-header="true" padding="true">
+    <!-- Modal header bar -->
+    <ion-header-bar class="bar-secondary">
+      <h1 class="title">New Task</h1>
+      <button class="button button-clear button-positive" ng-click="closeNewTask()">Cancel</button>
+    </ion-header-bar>
 
-        <div class="list list-inset" style="margin-top: 100px;">
+    <!-- Modal content area -->
+    <ion-content>
 
-            <label class="item item-input">
-                <input type="email" placeholder="Email" ng-model="user.email">
-            </label>
-            <label class="item item-input">
-                <input type="password" placeholder="Password" ng-model="user.password">
-            </label>
-
-            <button class="button button-block button-stable" ng-click="login()">
-                Login
-            </button>
-            
-<!--
-            <div style="text-align: center; margin: 25px 0;">or</div>
-
-            <button class="button button-block button-positive" style="background: #3b5998" ng-click="facebookLogin()">
-                Login with Facebook
-            </button>
--->
+      <form ng-submit="createTask(task)">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="What do you need to do?" ng-model="task.title">
+          </label>
         </div>
+        <div class="padding">
+          <button type="submit" class="button button-block button-positive">Create Task</button>
+        </div>
+      </form>
 
     </ion-content>
 
-</ion-view>
+  </div>
+
+</script>
+
