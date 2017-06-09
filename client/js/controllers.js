@@ -58,7 +58,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('OneCtrl', function($scope, $location) {
+.controller('OneCtrl', function($scope, $location, RegistrationService) {
  $scope.login = function() {
     RegistrationService.login($scope.user.email, $scope.user.password).then(function() {
       $location.path("/");
