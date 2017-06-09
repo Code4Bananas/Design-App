@@ -60,7 +60,7 @@ angular.module('starter.controllers', [])
 
 .controller('OneCtrl', function($scope, $location) {
 
-}
+})
 
 .controller('TwoCtrl', function($scope, $location) {
 
