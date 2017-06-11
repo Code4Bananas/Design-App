@@ -65,7 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('one', {
-    url: "/one",
+    url: "/register",
     templateURL: "templates/one.html",
     controller: 'OneCtrl'    
   })
