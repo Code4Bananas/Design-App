@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   .state('register', {
     url: "/register",
-    templateUrl: "templates/register.html",
+    templateUrl: "templates/one.html",
     controller: 'RegisterCtrl'
   })
 
@@ -66,12 +66,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   .state('one', {
     url: "/one",
-    views: {
-      'home': {
-      templateURL: "templates/one.html",
-      controller: 'OneCtrl'
-      }
-     }
+    templateURL: "templates/one.html",
+    controller: 'OneCtrl'    
   })
   
    .state('two', {
