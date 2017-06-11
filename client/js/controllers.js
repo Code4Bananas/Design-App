@@ -3,7 +3,7 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function($scope, $location, RegistrationService) {
   $scope.logout = function() {
     RegistrationService.logout();
-    $location.path("/one");
+    $location.path("/register");
   }
   $scope.timeleft = '0 secs';
 })
@@ -58,20 +58,20 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('OneCtrl', function($scope) {
+.controller('OneCtrl', function($scope, $location) {
   
 })
 
-.controller('TwoCtrl', function($scope) {
+.controller('TwoCtrl', function($scope, $location) {
 
 })
 
 
-.controller('ThreeCtrl', function($scope) {
+.controller('ThreeCtrl', function($scope, $location) {
 
 })
 
 
-.controller('AllCtrl', function($scope) {
+.controller('AllCtrl', function($scope, $location) {
 
 })
