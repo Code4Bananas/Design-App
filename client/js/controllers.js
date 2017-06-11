@@ -62,7 +62,9 @@ angular.module('starter.controllers', [])
   $scope.$parent.logout_text = 'Home';
   
   $scope.one = function() {
+    (function() {
     $location.path("/");
+    });
   }
 })
 
