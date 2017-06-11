@@ -90,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
 
   // Register middleware to ensure our auth token is passed to the server
   $httpProvider.interceptors.push('TokenInterceptor');
