@@ -58,20 +58,20 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('OneCtrl', function(/* $scope, $location, $http */) {
-  console.log("One Bedroom");
+.controller('OneCtrl', function($scope) {
+  
 })
 
-.controller('TwoCtrl', function($scope, $location) {
-
-})
-
-
-.controller('ThreeCtrl', function($scope, $location) {
+.controller('TwoCtrl', function($scope) {
 
 })
 
 
-.controller('AllCtrl', function($scope, $location) {
+.controller('ThreeCtrl', function($scope) {
+
+})
+
+
+.controller('AllCtrl', function($scope) {
 
 })
