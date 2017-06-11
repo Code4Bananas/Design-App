@@ -48,7 +48,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Each state's controller can be found in controllers.js
   $stateProvider.state('home', {
     url: "/home",
-    abstract: true,
     templateUrl: "templates/home.html",
     controller: 'HomeCtrl'
   })
@@ -65,7 +64,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'LoginCtrl'
   })
 
-  .state('home.one', {
+  .state('one', {
     url: "/one",
     templateURL: "templates/one.html",
     controller: 'OneCtrl'
