@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('register', {
     url: "/register",
     templateUrl: "templates/two.html",
-    controller: 'TwoCtrl'
+    controller: 'RegisterCtrl'
   })
 
   .state('login', {
