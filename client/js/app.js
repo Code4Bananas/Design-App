@@ -5,41 +5,6 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngResource'])
 
-.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
-  $rootScope.user = {
-    name: $window.sessionStorage.name,
-    is_admin: $window.sessionStorage.is_admin
-  };
-
-  if ($rootScope.user.is_admin) {
-    AuthenticationService.isAdmin = true;
-  }
-
-  $rootScope.$on("$stateChangeStart", function(event, toState) {
-    //redirect only if both isAuthenticated is false and no token is set
-
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all'].indexOf(toState.name) === -1) {
-      if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
-        event.preventDefault();
-        $location.path("/home");
-      }
-    }
-
-  });
-
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
-})
-
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -95,4 +60,39 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Register middleware to ensure our auth token is passed to the server
   $httpProvider.interceptors.push('TokenInterceptor');
 
+})
+
+.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
+  $rootScope.user = {
+    name: $window.sessionStorage.name,
+    is_admin: $window.sessionStorage.is_admin
+  };
+
+  if ($rootScope.user.is_admin) {
+    AuthenticationService.isAdmin = true;
+  }
+
+  $rootScope.$on("$stateChangeStart", function(event, toState) {
+    //redirect only if both isAuthenticated is false and no token is set
+
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all'].indexOf(toState.name) === -1) {
+      if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
+        event.preventDefault();
+        $location.path("/home");
+      }
+    }
+
+  });
+
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
 })
