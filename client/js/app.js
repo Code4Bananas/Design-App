@@ -65,7 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('one', {
-    url: "templates/one",
+    url: "/one",
     views: {
       'home': {
       templateURL: "templates/one.html",
