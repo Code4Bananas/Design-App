@@ -59,7 +59,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OneCtrl', function($scope, $location) {
+  $scope.$parent.logout_text = 'Home';
   
+  $scope.one = function() {
+    $location.path("/");
+  }
 })
 
 .controller('TwoCtrl', function($scope, $location) {
