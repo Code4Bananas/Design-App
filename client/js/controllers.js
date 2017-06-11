@@ -59,9 +59,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OneCtrl', function($scope, $location) {
-  $scope.one = function(){
-    $location.path("/one");
-  }
+  
 })
 
 .controller('TwoCtrl', function($scope, $location) {
