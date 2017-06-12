@@ -52,7 +52,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    templateURL: "templates/all.html",
    controller: 'AllCtrl'
   })
-
+  
+  .state('1B1', {
+  url: "/1B1",
+  templateURL: "templates/1B1.html",
+  controller: '1B1Ctrl'
+  })
+  
+   .state('1B2', {
+   url: "/1B2",
+   templateURL: "templates/1B2.html",
+   controller: '1B2Ctrl'
+  })
+  
+  .state('1B3', {
+  url: "/1B3",
+  templateURL: "templates/1B3.html",
+  controller: '1B3Ctrl'
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
