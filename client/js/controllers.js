@@ -81,3 +81,15 @@ angular.module('starter.controllers', [])
 .controller('AllCtrl', function($scope, $location) {
 
 })
+
+.controller('1B1Ctrl', function($scope, $location) {
+  
+})
+
+.controller('1B2Ctrl', function($scope, $location) {
+  
+})
+
+.controller('1B3Ctrl', function($scope, $location) {
+  
+})
