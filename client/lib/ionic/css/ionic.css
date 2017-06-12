@@ -2556,10 +2556,9 @@ h1, .h1 {
   font-weight: bold;
   text-align: center;
   background: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
-  color: white; 
+  color: #1D87FF; 
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: #000000 0 0 10px;
 }
 
 h2, .h2 {
