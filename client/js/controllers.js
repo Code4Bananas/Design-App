@@ -93,3 +93,49 @@ angular.module('starter.controllers', [])
 .controller('1B3Ctrl', function($scope, $location) {
   
 })
+
+.controller('2B1Ctrl', function($scope, $location) {
+  
+})
+
+.controller('2B2Ctrl', function($scope, $location) {
+  
+})
+
+.controller('2B3Ctrl', function($scope, $location) {
+  
+})
+.controller('2B4Ctrl', function($scope, $location) {
+  
+})
+
+.controller('2B5Ctrl', function($scope, $location) {
+  
+})
+
+.controller('2B6Ctrl', function($scope, $location) {
+  
+})
+
+.controller('3B1Ctrl', function($scope, $location) {
+  
+})
+
+.controller('3B2Ctrl', function($scope, $location) {
+  
+})
+
+.controller('3B3Ctrl', function($scope, $location) {
+  
+})
+.controller('3B4Ctrl', function($scope, $location) {
+  
+})
+
+.controller('3B5Ctrl', function($scope, $location) {
+  
+})
+
+.controller('3B6Ctrl', function($scope, $location) {
+  
+})
