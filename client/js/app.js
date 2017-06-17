@@ -71,6 +71,79 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   controller: '1B3Ctrl'
   })
 
+  .state('2B1', {
+  url: "/2B1",
+  templateURL: "templates/2B1.html",
+  controller: '2B1Ctrl'
+  })
+  
+   .state('2B2', {
+   url: "/2B2",
+   templateURL: "templates/2B2.html",
+   controller: '2B2Ctrl'
+  })
+  
+  .state('2B3', {
+  url: "/2B3",
+  templateURL: "templates/2B3.html",
+  controller: '2B3Ctrl'
+  })  
+  
+    .state('2B4', {
+  url: "/2B4",
+  templateURL: "templates/2B4.html",
+  controller: '2B4Ctrl'
+  })
+  
+   .state('2B5', {
+   url: "/2B5",
+   templateURL: "templates/2B5.html",
+   controller: '2B5Ctrl'
+  })
+  
+  .state('2B6', {
+  url: "/2B6",
+  templateURL: "templates/2B6.html",
+  controller: '2B6Ctrl'
+  })
+  
+    .state('3B1', {
+  url: "/3B1",
+  templateURL: "templates/3B1.html",
+  controller: '3B1Ctrl'
+  })
+  
+   .state('3B2', {
+   url: "/3B2",
+   templateURL: "templates/3B2.html",
+   controller: '3B2Ctrl'
+  })
+  
+  .state('3B3', {
+  url: "/3B3",
+  templateURL: "templates/3B3.html",
+  controller: '3B3Ctrl'
+  })  
+  
+    .state('3B4', {
+  url: "/3B4",
+  templateURL: "templates/3B4.html",
+  controller: '3B4Ctrl'
+  })
+  
+   .state('3B5', {
+   url: "/3B5",
+   templateURL: "templates/3B5.html",
+   controller: '3B5Ctrl'
+  })
+  
+  .state('3B6', {
+  url: "/3B6",
+  templateURL: "templates/3B6.html",
+  controller: '3B6Ctrl'
+  })
+  
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
 
@@ -92,7 +165,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all'].indexOf(toState.name) === -1) {
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/home");
