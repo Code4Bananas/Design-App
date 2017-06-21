@@ -78,7 +78,7 @@ angular.module('starter.services', [])
 .factory('RegistrationService', function($window, $http, $ionicPopup, $rootScope, AuthenticationService) {
   return {
     login: function(email, password) {
-      return $http.post('/login', {
+      return $http.post('/one', {
         email: email,
         password: password
       }).then(function(result) {
