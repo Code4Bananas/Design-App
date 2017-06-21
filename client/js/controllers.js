@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ui.router'])
+angular.module('starter.controllers', ['routerRoutes'])
 
 .controller('AppCtrl', function($scope, $location, RegistrationService) {
   $scope.logout = function() {
