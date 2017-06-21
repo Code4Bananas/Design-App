@@ -48,9 +48,7 @@ module.exports = {
       var lead = nforce.createSObject('Lead');
       lead.set('FirstName', name[0]);
       lead.set('LastName', name[1]);
-      lead.set('Company', 'quizlive');
       lead.set('Email', email);
-      lead.set('Description', 'New QuizLive player');
 
       org.insert({
         sobject: lead
