@@ -74,7 +74,7 @@ angular.module('starter.controllers', [])
 
 
 .controller('ThreeCtrl', function($scope, $location) {
-
+  $scope.$state = $state;
 })
 
 
