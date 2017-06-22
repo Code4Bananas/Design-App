@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    name: 'three',
    url: "/three",
    templateURL: "templates/three.html",
-   controller: 'MainCtrl'
+   controller: 'AppCtrl'
   })
   
    .state('all', {
