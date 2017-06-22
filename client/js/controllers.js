@@ -139,3 +139,17 @@ angular.module('starter.controllers', [])
 .controller('3B6Ctrl', function($scope, $location) {
   
 })
+
+.controller('MainCtrl', function($scope, $state, $ionicSideMenuDelegate) {
+        "use strict";
+      
+
+        $scope.enterState = function(stateID) {
+          console.log(stateID);
+            $state.transitionTo(stateID);
+        };
+
+       //$scope.enterState('home');
+      
+        $scope.$state = $state;
+    })
