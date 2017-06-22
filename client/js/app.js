@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    .state('all', {
    url: "/all",
    templateURL: "templates/all.html",
-   controller: 'AllCtrl'
+   controller: 'MainCtrl'
   })
   
   .state('1B1', {
