@@ -42,6 +42,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
   
    .state('three', {
+   name: 'three',
    url: "/three",
    templateURL: "templates/three.html",
    controller: 'MainCtrl'
