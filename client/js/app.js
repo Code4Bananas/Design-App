@@ -45,13 +45,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    name: 'three',
    url: "/three",
    templateURL: "templates/three.html",
-   controller: 'AppCtrl'
+   controller: 'HomeCtrl'
   })
   
    .state('all', {
    url: "/all",
    templateURL: "templates/all.html",
-   controller: 'MainCtrl'
+   controller: 'HomeCtrl'
   })
   
   .state('1B1', {
