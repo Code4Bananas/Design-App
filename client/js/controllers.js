@@ -54,7 +54,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ThreeCtrl', function($scope, $location) {
+.controller('HomeCtrl', function($scope, $location) {
 
 })
 
@@ -67,7 +67,7 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('HomeCtrl', '$http', '$state', function($scope, $location, $state, $http) {
+.controller('ThreeCtrl', '$http', '$state', function($scope, $location, $state, $http) {
   $http.get('app.json').success(function(data) {
     $scope.rooms = data;
     $scope.whichrooms = $state.params.three;
