@@ -48,6 +48,11 @@
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
 }
 
+.button.fixed {
+    position: fixed;
+    bottom: 0px;
+}
+
 /* home screen */
 .home-content {
     background: url(/img/splash-background.png) no-repeat;
