@@ -29,13 +29,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'LoginCtrl'
   })
 
-  .state('home.one', {
+  .state('one', {
     url: "/one",
-    views: {
-      'one' : {
     templateURL: "templates/one.html"   
-      }
-    }
   })
   
    .state('two', {
