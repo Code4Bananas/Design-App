@@ -54,8 +54,11 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('HomeCtrl', function($scope, $location) {
-
+.controller('HomeCtrl', '$state', function($scope, $location, $state) {
+  $http.get('app.json').success(function(data) {
+    $scope.rooms = data;
+    $scope.whichrooms = $state.params.three;
+  }
 })
 
 .controller('OneCtrl', function($scope, $location) {
