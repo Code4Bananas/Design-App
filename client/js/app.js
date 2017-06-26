@@ -49,7 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   
    .state('all', {
    url: "/all",
-   templateURL: "templates/all.html",
+   templateUrl: "templates/all.html",
    controller: 'HomeCtrl'
   })
   
