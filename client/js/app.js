@@ -161,11 +161,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     AuthenticationService.isAdmin = true;
   }
 
-  $rootScope.$on("$stateChangeError", function(event, toState, toParams, fromState, fromParams, error) {
-         console.log("stateChangeError:");
-         console.log(arguments);
-        });
-  
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
