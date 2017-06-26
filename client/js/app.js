@@ -19,24 +19,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   .state('register', {
     url: "/register",
-    templateUrl: "templates/two.html",
+    templateUrl: "templates/register.html",
     controller: 'RegisterCtrl'
   })
 
   .state('login', {
     url: "/login",
-    templateUrl: "templates/one.html",
+    templateUrl: "templates/login.html",
     controller: 'LoginCtrl'
   })
 
   .state('one', {
     url: "/one",
-    templateURL: "templates/one.html"   
+    templateUrl: "templates/one.html",
+    controller: 'OneCtrl'
   })
   
    .state('two', {
    url: "/two",
-   templateURL: "templates/two.html",
+   templateUrl: "templates/two.html",
    controller: 'TwoCtrl'
   })
   
@@ -54,91 +55,91 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   
   .state('1B1', {
   url: "/1B1",
-  templateURL: "templates/1B1.html",
+  templateUrl: "templates/1B1.html",
   controller: '1B1Ctrl'
   })
   
    .state('1B2', {
    url: "/1B2",
-   templateURL: "templates/1B2.html",
+   templateUrl: "templates/1B2.html",
    controller: '1B2Ctrl'
   })
   
   .state('1B3', {
   url: "/1B3",
-  templateURL: "templates/1B3.html",
+  templateUrl: "templates/1B3.html",
   controller: '1B3Ctrl'
   })
 
   .state('2B1', {
   url: "/2B1",
-  templateURL: "templates/2B1.html",
+  templateUrl: "templates/2B1.html",
   controller: '2B1Ctrl'
   })
   
    .state('2B2', {
    url: "/2B2",
-   templateURL: "templates/2B2.html",
+   templateUrl: "templates/2B2.html",
    controller: '2B2Ctrl'
   })
   
   .state('2B3', {
   url: "/2B3",
-  templateURL: "templates/2B3.html",
+  templateUrl: "templates/2B3.html",
   controller: '2B3Ctrl'
   })  
   
     .state('2B4', {
   url: "/2B4",
-  templateURL: "templates/2B4.html",
+  templateUrl: "templates/2B4.html",
   controller: '2B4Ctrl'
   })
   
    .state('2B5', {
    url: "/2B5",
-   templateURL: "templates/2B5.html",
+   templateUrl: "templates/2B5.html",
    controller: '2B5Ctrl'
   })
   
   .state('2B6', {
   url: "/2B6",
-  templateURL: "templates/2B6.html",
+  templateUrl: "templates/2B6.html",
   controller: '2B6Ctrl'
   })
   
     .state('3B1', {
   url: "/3B1",
-  templateURL: "templates/3B1.html",
+  templateUrl: "templates/3B1.html",
   controller: '3B1Ctrl'
   })
   
    .state('3B2', {
    url: "/3B2",
-   templateURL: "templates/3B2.html",
+   templateUrl: "templates/3B2.html",
    controller: '3B2Ctrl'
   })
   
   .state('3B3', {
   url: "/3B3",
-  templateURL: "templates/3B3.html",
+  templateUrl: "templates/3B3.html",
   controller: '3B3Ctrl'
   })  
   
     .state('3B4', {
   url: "/3B4",
-  templateURL: "templates/3B4.html",
+  templateUrl: "templates/3B4.html",
   controller: '3B4Ctrl'
   })
   
    .state('3B5', {
    url: "/3B5",
-   templateURL: "templates/3B5.html",
+   templateUrl: "templates/3B5.html",
    controller: '3B5Ctrl'
   })
   
   .state('3B6', {
   url: "/3B6",
-  templateURL: "templates/3B6.html",
+  templateUrl: "templates/3B6.html",
   controller: '3B6Ctrl'
   })
   
@@ -160,8 +161,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   if ($rootScope.user.is_admin) {
     AuthenticationService.isAdmin = true;
   }
-
-  
   
   $rootScope.$on('$stateChangeStart',function(event, toState, toParams, fromState, fromParams){
   console.log('$stateChangeStart to '+toState.name+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
