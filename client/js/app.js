@@ -43,7 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    .state('three', {
     url: "/home/:three",
     templateURL: "templates/three.html",
-    controller: 'HomeCtrl'
+    controller: 'ThreeCtrl'
   })
   
    .state('all', {
