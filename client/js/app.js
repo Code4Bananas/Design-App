@@ -46,11 +46,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
    controller: 'TwoCtrl'
   })
   
-   .state('three', {
-   name: 'three',
-   url: "/three",
-   templateURL: "templates/three.html",
-   controller: 'HomeCtrl'
+   .state('home.three', {
+    url: "/three",
+    views: {
+      'three' : {
+    templateURL: "templates/three.html",
+    controller: 'HomeCtrl'    
+      }
+    }
   })
   
    .state('all', {
