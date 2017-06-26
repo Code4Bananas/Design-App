@@ -11,15 +11,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
-  $stateProvider.state('index', {
-    url:"/index",
+  $stateProvider.state('tabs', {
+    url:"/tabs",
     abstract: true,
-    templateURL: 'client/index.html'
+    templateURL: 'templates/tabs.html'
   })
-  .state('index.home', {
+  .state('tabs.home', {
     url: "/home",
     views:  { 
-    'index-home' : {
+    'home-tab' : {
     templateUrl: "templates/home.html",
     controller: 'HomeCtrl'
     }
@@ -152,7 +152,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   
   
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/index/home');
+  $urlRouterProvider.otherwise('/tabs/home');
 
   // Register middleware to ensure our auth token is passed to the server
   $httpProvider.interceptors.push('TokenInterceptor');
