@@ -54,21 +54,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('HomeCtrl', '$state', function($scope, $location, $state) {
-  $http.get('app.json').success(function(data) {
-    $scope.rooms = data;
-    $scope.whichrooms = $state.params.three;
-  }
+.controller('ThreeCtrl', function($scope, $location) {
+
 })
 
 .controller('OneCtrl', function($scope, $location) {
-  $scope.$parent.logout_text = 'Home';
-  
-  $scope.one = function() {
-    (function() {
-    $location.path("/");
-    });
-  }
+
 })
 
 .controller('TwoCtrl', function($scope, $location) {
@@ -76,9 +67,14 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('ThreeCtrl', function($scope, $location) {
-  $scope.$state = $state;
+.controller('HomeCtrl', '$http', '$state', function($scope, $location, $state, $http) {
+  $http.get('app.json').success(function(data) {
+    $scope.rooms = data;
+    $scope.whichrooms = $state.params.three;
+  }
 })
+
+
 
 
 .controller('AllCtrl', function($scope, $location) {
