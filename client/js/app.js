@@ -12,7 +12,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider.state('home', {
-    url: "/",
+    url: "/home",
+    abstract: true,
     templateUrl: "templates/home.html",
     controller: 'HomeCtrl'
   })
@@ -29,10 +30,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'LoginCtrl'
   })
 
-  .state('one', {
+  .state('home.one', {
     url: "/one",
+    views: {
+      'one' : {
     templateURL: "templates/one.html",
     controller: 'OneCtrl'    
+      }
+    }
   })
   
    .state('two', {
