@@ -33,8 +33,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url: "/one",
     views: {
       'one' : {
-    templateURL: "templates/one.html",
-    controller: 'OneCtrl'    
+    templateURL: "templates/one.html"   
       }
     }
   })
@@ -47,7 +46,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   
    .state('three', {
     url: "/three",
-    templateURL: "templates/three.html",   
+    templateURL: "templates/three.html"   
   })
   
    .state('all', {
