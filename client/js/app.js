@@ -47,7 +47,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   
    .state('three', {
     url: "/three",
-    abstract: true,
     templateURL: "templates/three.html",
     controller: 'HomeCtrl'    
   })
