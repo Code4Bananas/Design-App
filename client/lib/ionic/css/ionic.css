@@ -2216,6 +2216,11 @@ body, .ionic-body {
 body.grade-b, body.grade-c {
   text-rendering: auto; }
 
+.img-view {
+  border-bottom-style: dashed;
+}
+
+
 .content {
   position: relative; }
 
