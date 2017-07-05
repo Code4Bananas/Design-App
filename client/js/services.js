@@ -1,4 +1,18 @@
-angular.module('starter.services', [])
+angular.module('starter.services', 'Contact', [])
+
+.factory('Contact', function (AngularForceObjectFactory) {
+ var objDesc = {
+     type: 'Contact',
+     fields: ['FirstName', 'LastName', 'MobilePhone', 'Email'],
+     where: '',
+     orderBy: 'LastName',
+     limit: 20
+ };
+  var Contact = AngularForceObjectFactory(objDesc);
+
+  return Contact;
+});
+
 
 .factory('SocketIO', function() {
   return io()
@@ -7,7 +21,7 @@ angular.module('starter.services', [])
 .factory('Question', function($resource) {
   return $resource('/resource/questions/:questionId', null, {
     'activate': {
-      method: 'POST',
+      method: 'POST', 
       url: '/resource/questions/:questionId/activate'
     },
     'next': {
