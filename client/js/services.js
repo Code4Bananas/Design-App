@@ -1,19 +1,5 @@
 angular.module('starter.services', [])
 
-.factory('Contact', function (AngularForceObjectFactory) {
- var objDesc = {
-     type: 'Contact',
-     fields: ['FirstName', 'LastName', 'MobilePhone', 'Email'],
-     where: '',
-     orderBy: 'LastName',
-     limit: 20
- };
-  var Contact = AngularForceObjectFactory(objDesc);
-
-  return Contact;
-});
-
-
 .factory('SocketIO', function() {
   return io()
 })
