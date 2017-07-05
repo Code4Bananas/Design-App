@@ -1,4 +1,4 @@
-angular.module('starter.services', 'Contact', [])
+angular.module('starter.services', [])
 
 .factory('Contact', function (AngularForceObjectFactory) {
  var objDesc = {
