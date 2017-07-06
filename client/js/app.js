@@ -16,7 +16,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     templateUrl: "templates/home.html",
     controller: 'HomeCtrl'
   })
-
+  
+  .state('form', {
+    url: "/form",
+    templateUrl: "templates/form.html",
+    controller: 'HomeCtrl'
+  })
+  
   .state('register', {
     url: "/register",
     templateUrl: "templates/register.html",
@@ -193,7 +199,7 @@ $rootScope.$on('$stateNotFound',function(event, unfoundState, fromState, fromPar
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/home");
