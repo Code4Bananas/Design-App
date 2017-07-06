@@ -102,6 +102,9 @@ angular.module('starter.services', [])
       delete $window.localStorage.token;
     },
 
+    form: function($location) {
+      $location.path('/form');
+    },
     register: function(user) {
       return $http.post('/register', user).then(function(result) {
         $rootScope.user = result.data;
