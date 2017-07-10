@@ -64,6 +64,10 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('CalendarCtrl', function($scope, $location) {
+  
+})
+
 .controller('OneCtrl', function($scope, $location) {
 
 })
