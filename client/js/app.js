@@ -149,6 +149,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   controller: '3B6Ctrl'
   })
   
+  .state('C1', {
+    url: "/C1",
+    templateUrl: "templates/C1.html",
+    controller: 'CalendarCtrl'
+  })
+  
   
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
@@ -199,7 +205,7 @@ $rootScope.$on('$stateNotFound',function(event, unfoundState, fromState, fromPar
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'C1', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/home");
