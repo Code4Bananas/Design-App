@@ -150,11 +150,88 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
   
   .state('C1', {
-    url: "/C1",
-    templateUrl: "templates/C1.html",
-    controller: 'CalendarCtrl'
-  })
+  url: "/C1",
+  templateUrl: "templates/C1.html",
+  controller: 'CalendarCtrl'
+ })
+
+  .state('C2', {
+  url: "/C2",
+  templateUrl: "templates/C2.html",
+  controller: 'CalendarCtrl'
+ })
   
+  .state('C3', {
+  url: "/C3",
+  templateUrl: "templates/C3.html",
+  controller: 'CalendarCtrl'
+ })  
+  
+   .state('C4', {
+  url: "/C4",
+  templateUrl: "templates/C4.html",
+  controller: 'CalendarCtrl'
+ })
+  
+  .state('C5', {
+  url: "/C5",
+  templateUrl: "templates/C5.html",
+  controller: 'CalendarCtrl'
+ })
+
+  .state('C6', {
+  url: "/C6",
+  templateUrl: "templates/C6.html",
+  controller: 'CalendarCtrl'
+ })  
+  
+  .state('C7', {
+  url: "/C7",
+  templateUrl: "templates/C7.html",
+  controller: 'CalendarCtrl'
+ }) 
+  
+  .state('C1', {
+  url: "/C1",
+  templateUrl: "templates/C1.html",
+  controller: 'CalendarCtrl'
+ })
+
+  .state('C2', {
+  url: "/C2",
+  templateUrl: "templates/C2.html",
+  controller: 'CalendarCtrl'
+ })
+  
+  .state('C3', {
+  url: "/C3",
+  templateUrl: "templates/C3.html",
+  controller: 'CalendarCtrl'
+ })  
+  
+   .state('C4', {
+  url: "/C4",
+  templateUrl: "templates/C4.html",
+  controller: 'CalendarCtrl'
+ })
+  
+  .state('C5', {
+  url: "/C5",
+  templateUrl: "templates/C5.html",
+  controller: 'CalendarCtrl'
+ })
+
+  .state('C6', {
+  url: "/C6",
+  templateUrl: "templates/C6.html",
+  controller: 'CalendarCtrl'
+ })  
+  
+  .state('C7', {
+  url: "/C7",
+  templateUrl: "templates/C7.html",
+  controller: 'CalendarCtrl'
+ })   
   
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
