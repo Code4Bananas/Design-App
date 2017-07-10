@@ -39,15 +39,12 @@
     
   </ion-content>
   
-  <ion-footer-bar class="bar-stable nav-title-slide-ios7">
-  <button (click)="call('tel:4806862280')" secondary clear item-right>
-   <ion-icon name="call"></ion-icon>
-    Call
-  </button>
-  </ion-footer-bar>
-  
-  <ion-footer-bar class="bar-stable nav-title-slide-ios7">
-    <button class="button" ng-click="redirect()">Form</button>
-  </ion-footer-bar>
+      <div class="bar bar-footer footer">
+
+      <a style="min-width: 33%; border-radius: 0px" class="button icon-top ion-iphone" href="tel:4806862280" title="Call">Call</a>
+      <a style="min-width: 33%; border-radius: 0px" class="button icon-top ion-person" ng-href="#/form" title="Form">Form</a>
+      <a style="min-width: 33%; border-radius: 0px" class="button icon-top ion-calendar" title="Calendar">Calendar</a>
+
+      </div>
     
 </ion-view>
