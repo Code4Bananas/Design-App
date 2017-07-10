@@ -1,7 +1,212 @@
 <ion-view title="Rent">
   <ion-content class="has-header padding">
     
-    <form action="http://www2.rentalsinrockypoint.com/l/217652/2016-09-19/2c67" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
+     <style type="text/css">
+   .desktop form {
+    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    margin:auto;
+    position:relative;
+    width:160px;
+    height:770px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: none;
+    line-height: 22px;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding:10px;
+    border: 1px solid #999;
+    border: inset 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    left: -15px;
+   }
+   .required {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: none;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ef6b9d;
+   }
+   form h3 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: bold;
+    line-height: 24px;
+    font-weight: bold;
+    color: #1c75bc;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+   }
+   input {
+    width:150px;
+    display:block;
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   }
+   textarea {
+    width:150px;
+    height:100px;
+    display:block;
+    border: 1px solid #999;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   }
+   textarea.message {
+    display:block;
+   }
+   button#enviar {
+    width:100px;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    background:#09C;
+    color:#fff;
+    font-family: Tahoma, Geneva, sans-serif;
+    height:30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 1p solid #999;
+   }
+   button#enviar:hover {
+    background:#fff;
+    color:#09C;
+   }
+   textarea:focus, input:focus {
+    border: 1px solid #09C;
+    background-color: #27AAE1;
+   }
+  </style>
+  <!--[if lte IE 9]>
+   <style type="text/css" title="ie-style-css">
+    /* lte IE 9 style*/
+    form {
+     border-radius: 8px;
+     position: relative;
+    }
+    input {
+     position: relative;
+    }
+    textarea {
+     position: relative;
+    }
+    button#enviar {
+     border-radius: 15px;
+     position: relative;
+    }
+   </style>
+  <![endif]-->
+  <script type="text/javascript">
+   function validateForm()
+   {
+   var e=document.forms["myForm"]["email"].value;
+   var atpos=e.indexOf("@");
+   var dotpos=e.lastIndexOf(".");
+   var x=document.forms["myForm"]["first_name"].value;
+   var y=document.forms["myForm"]["last_name"].value;
+   var z=document.forms["myForm"]["phone"].value;
+   if (x==null || x=="")
+     {
+     alert("First name must be filled out");
+     return false;
+     }
+   if (y==null || y=="")
+     {
+     alert("Last name must be filled out");
+     return false;
+     }
+   if (z==null || z=="")
+     {
+     alert("Phone number must be filled out");
+     return false;
+     }
+   if (e==null || e=="")
+     {
+     alert("Email must be filled out");
+     return false;
+     }
+   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
+     {
+     alert("Not a valid e-mail address");
+     return false;
+     }
+   }
+  </script>
+  <!--End Sidebar Web Form-->
+  <!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+ </head>
+ <body>
+  <div class="row_1">
+   <div class="column_1 gridContainer"> <a href="index.html" target="_self"><img class="image" src="images/website-header.jpg" alt="Rentals In Rocky Point | Las Palomas condo reservations (480) 686-2280"/></a> 
+   </div>
+   <div class="column_1_mobile"> <a href="index.html"><img class="image6" src="images/website-header-mobile.jpg" alt="Rentals in Rocky Point"/></a><a href="tel:4806862280" target="_self"><img src="images/clicktocall.png" class="image10" style="" alt="Click To Call (480) 686-2280"/></a> 
+   </div>
+  </div>
+  <div class="row_2">
+   <div class="column_2 gridContainer">
+    <div class="row_13">
+     <div class="mobile_menu">
+      <select class="customClass1">
+       <option value="index.html">Home</option>
+       <option value="one_bedroom_condo.html">1 Bedroom Condos</option>
+       <option value="two_bedroom_condo.html">2 Bedroom Condos</option>
+       <option value="three_bedroom_condo.html">3 Bedroom Condos</option>
+       <option value="casa_vasquez.html">3 Bedroom Las Conchas House</option>
+       <option value="availability.html">Availability Calendars</option>
+       <option value="map_and_directions.html">Map/Directions</option>
+       <option value="mexico-insurance.html">Buy Mexico Insurance</option>
+       <option value="restaurant_recommendations.html">Restaurants</option>
+       <option value="rocky_point_events.html">Events</option>
+       <option value="contact.html">Contact Us</option>
+      </select>
+      <script type="text/javascript" src="scripts/mobile_menu_selection.js"></script>
+     </div>
+    </div>
+    <div class="column_4">
+     <ul class="list">
+      <li><a href="index.html" target="_self" class="anchor2">Home</a> 
+      </li>
+      <li><a href="one_bedroom_condo.html" target="_self" class="anchor2">One Bedroom Rental </a> 
+      </li>
+      <li><a href="two_bedroom_condo.html" target="_self" class="anchor2">Two Bedroom Rental</a> 
+      </li>
+      <li><a href="three_bedroom_condo.html" target="_self" class="anchor2">Three Bedroom Rental</a> 
+      </li>
+      <li><a href="casa_vasquez.html" target="_self" class="anchor2">Las Conchas House</a> 
+      </li>
+      <li><a href="availability.html" target="_self" class="anchor2">Availability Calendar</a> 
+      </li>
+      <li><a href="map_and_directions.html" target="_self" class="anchor2">Map/Directions</a> 
+      </li>
+      <li><!--<a href="https://ebusiness.mexipass.com/shell.php/weblink/l/t/52f5b0c6cc18d1821fa65735fb5f6294" target="_self" class="anchor2">--><a href="mexico-insurance.html" target="_self" class="anchor2">Buy Mexico Insurance</a></li>
+      <li><a href="rocky_point_events.html" target="_self" class="anchor2">Rocky Point Events</a> 
+      </li>
+      <li><a href="restaurant_recommendations.html" target="_self" class="anchor2">Restaurant Reccomendations</a> 
+      </li>
+      <!--<li><a href="https://ebusiness.mexipass.com/shell.php/weblink/l/t/5903415f4c7dbe76c73f552fd5cda3a7" target="_self" class="anchor2">Mexico Insurance</a> 
+      </li>-->
+      <li><a href="from_our_renters.html" target="_self" class="anchor2">From Our Renters</a> 
+      </li>
+      <li><a href="http://rockypointpropertynetwork.wordpress.com/" target="_self" class="anchor2">Our Blog</a> 
+      </li>
+      <li><a href="contact.html" target="_self" class="anchor2">Contact Us</a> 
+      </li>
+     </ul>
+     <form action="http://www2.rentalsinrockypoint.com/l/217652/2016-09-19/2c67" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
        <h3>Start Planning Your Trip TODAY!</h3>
  <span style="color:#27AAE1;">Please complete the form below to receive rates &amp; availability information.</span> 
       <br/>
@@ -57,7 +262,7 @@
           9am-10pm </h3>
 
      </form>
-    
+    </div>
   </ion-content>
   
     
