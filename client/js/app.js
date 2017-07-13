@@ -234,7 +234,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
  })
   
   .state('C15', {
-  url: "/C14",
+  url: "/C15",
   templateUrl: "templates/C15.html",
   controller: 'CalendarCtrl'
  })
