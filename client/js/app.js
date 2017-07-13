@@ -191,45 +191,45 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   controller: 'CalendarCtrl'
  }) 
   
-  .state('C1', {
-  url: "/C1",
-  templateUrl: "templates/C1.html",
+  .state('C8', {
+  url: "/C8",
+  templateUrl: "templates/C8.html",
   controller: 'CalendarCtrl'
  })
 
-  .state('C2', {
-  url: "/C2",
-  templateUrl: "templates/C2.html",
+  .state('C9', {
+  url: "/C9",
+  templateUrl: "templates/C9.html",
   controller: 'CalendarCtrl'
  })
   
-  .state('C3', {
-  url: "/C3",
-  templateUrl: "templates/C3.html",
+  .state('C10', {
+  url: "/C10",
+  templateUrl: "templates/C10.html",
   controller: 'CalendarCtrl'
  })  
   
-   .state('C4', {
-  url: "/C4",
-  templateUrl: "templates/C4.html",
+   .state('C11', {
+  url: "/C11",
+  templateUrl: "templates/C11.html",
   controller: 'CalendarCtrl'
  })
   
-  .state('C5', {
-  url: "/C5",
-  templateUrl: "templates/C5.html",
+  .state('C12', {
+  url: "/C12",
+  templateUrl: "templates/C12.html",
   controller: 'CalendarCtrl'
  })
 
-  .state('C6', {
-  url: "/C6",
-  templateUrl: "templates/C6.html",
+  .state('C13', {
+  url: "/C13",
+  templateUrl: "templates/C13.html",
   controller: 'CalendarCtrl'
  })  
   
-  .state('C7', {
-  url: "/C7",
-  templateUrl: "templates/C7.html",
+  .state('C14', {
+  url: "/C14",
+  templateUrl: "templates/C14.html",
   controller: 'CalendarCtrl'
  })   
   
@@ -282,7 +282,7 @@ $rootScope.$on('$stateNotFound',function(event, unfoundState, fromState, fromPar
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'C1', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/home");
