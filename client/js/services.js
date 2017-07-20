@@ -102,9 +102,29 @@ angular.module('starter.services', [])
       delete $window.localStorage.token;
     },
 
-    form: function($location) {
-      $location.path('/form');
+    form: function(firstname, lastname, email, phone) {
+      return $http.post('/form', {
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        phone: phone
+      }).then(function(result) {
+        $rootScope.user = result.data;
+        console.log(result.data);
+        AuthenticationService.isAuthenticated = true;
+        AuthenticationService.isAdmin = result.data.is_admin;
+        
+        $window.sessionStorage.name     =result.data.name;
+        $window.sesionStorage.is_admin  = result.data.is_admin;
+        $window.localStorage.token      = result.data.token;
+      }).catch(function(err) {
+        $ionicPopup.alert({
+          title: 'Failed',
+          content: err.data
+        });
+      });;
     },
+    
     register: function(user) {
       return $http.post('/register', user).then(function(result) {
         $rootScope.user = result.data;
