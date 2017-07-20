@@ -8,9 +8,12 @@ angular.module('starter.controllers', [])
   $scope.timeleft = '0 secs';
 })
 
-.controller('FormCtrl', function($scope, $location) {
-  $scope.redirect = function() {
-    $location.path("/form");
+.controller('FormCtrl', function($scope, $location, $RegistrationService) {
+  $scope.user = {
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: ''
   };
 })
 
