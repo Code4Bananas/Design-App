@@ -2902,11 +2902,15 @@ a.subdued {
   .bar .button {
     z-index: 1;
     padding: 0 8px;
-    min-width: initial;
     min-height: 31px;
-    font-weight: 400;
     font-size: 13px;
-    line-height: 32px; }
+    line-height: 32px;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    font-weight:bold;
+    color: #FFFFFF;
+    background-color: #3093c7; 
+    background-image: linear-gradient(to bottom, #f62b2b, #d20202);
+}
     .bar .button.button-icon:before, .bar .button .icon:before, .bar .button.icon:before, .bar .button.icon-left:before, .bar .button.icon-right:before {
       padding-right: 2px;
       padding-left: 2px;
