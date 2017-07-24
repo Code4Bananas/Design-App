@@ -2905,7 +2905,7 @@ a.subdued {
     min-height: 40px;
     font-size: 15px;
     line-height: 40px;
-    text-shadow: 3px -1px 0 rgba(0,0,0,0.3);
+    text-shadow: 1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold;
     color: #FFFFFF;
     background-color: #3093c7; 
