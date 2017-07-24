@@ -2902,9 +2902,9 @@ a.subdued {
   .bar .button {
     z-index: 1;
     padding: 0 8px;
-    min-height: 31px;
-    font-size: 13.5px;
-    line-height: 32px;
+    min-height: 36px;
+    font-size: 16px;
+    line-height: 38px;
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold;
     color: #FFFFFF;
