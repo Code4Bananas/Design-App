@@ -2596,7 +2596,7 @@ h6, .h6 {
   font-weight: bold;
   text-align: center;
   border-radius: 4px;
-  text-shadow: 3px 2px 0 rgba(255,0,0,0.5);
+  text-shadow: 3px 2px 0 rgba(255,150,150,0.7);
   background: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
   color: #1F6FFF;
   -webkit-background-clip: text;
