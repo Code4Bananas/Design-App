@@ -1,32 +1,47 @@
 <ion-view title="Las Palomas Diamante 401">
   <ion-content class="has-header padding">
-    <h1>Two Bed - Two Bath</h1>
+    <h3>Two Bed - Two Bath</h3>
     
     <div class="img-view">
     <center><img src="/img/Diamante 401/OceanView.jpg"></center>
-    <center><p> Ocean View </p></center>
+    <center><h4> Ocean View </h4></center>
     </div>
     
     <div class="img-view">
     <center><img src="/img/Diamante 401/Patio.jpg"></center>
-    <center><p> Patio View </p></center>
+    <center><h4> Patio View </h4></center>
     </div>
     
     <div class="img-view">
     <center><img src="/img/Diamante 401/Living.jpg"></center>
-    <center><p> Living Room </p></center>
+    <center><h4> Living Room </h4></center>
     </div>
     
     <div class="img-view">
     <center><img src="/img/Diamante 401/Kitchen.jpg"></center>
-    <center><p> Kitchen </p></center>
+    <center><h4> Kitchen </h4></center>
     </div>
     
     <div class="img-view">
     <center><img src="/img/Diamante 401/Bedroom.jpg"></center>
-    <center><p> Bedroom </p></center>
+    <center><h4> Bedroom </h4></center>
     </div>
     
+       <img src="http://www.rentalsinrockypoint.com/images/key.png" class="center" alt="Diamante 401 Availability Calendar">
+      <img class="article_two1_img" alt="Diamante 401 availability" src="http://www.rentalsinrockypoint.com/rentals-in-rocky-point-calendars/a401-calendar.png" />
+     
+      <script type="text/javascript">
+          function LastModUsingHeader(sFile) {
+	            var X = !window.XMLHttpRequest ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+              X.open('GET', sFile, false);
+   	          try{ X.send();}
+	            catch(y){}
+  	          var dtImage=new Date();
+	            dtImage = X.getResponseHeader('Last-Modified'); 
+	            return new Date(dtImage).toLocaleString();
+          }
+          document.getElementById('getImageDate3').innerHTML=LastModUsingHeader('rentals-in-rocky-point-calendars/a401-calendar.png'); ;
+      </script>
     
   </ion-content>
 
