@@ -2592,7 +2592,16 @@ h5, .h5 {
   font-size: 14px; }
 
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  text-shadow: 3px 2px 0 rgba(255,0,0,0.5);
+  background: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
+  color: #1F6FFF;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 h1 small, .h1 small {
   font-size: 24px; }
