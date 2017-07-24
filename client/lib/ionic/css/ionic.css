@@ -2570,7 +2570,16 @@ h2, .h2 {
   font-size: 30px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  text-shadow: 3px 2px 0 rgba(0,0,0,0.6);
+  background: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
+  color: #1F6FFF;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 h4, .h4 {
   font-size: 18px; }
