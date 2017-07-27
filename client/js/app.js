@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('form', {
     url: "/form",
     templateUrl: "templates/form.html",
-    controller: 'FormCtrl'
+    controller: 'RegisterCtrl'
   })
   
   .state('thankyou', {
