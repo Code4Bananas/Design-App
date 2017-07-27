@@ -9,11 +9,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FormCtrl', function($scope, $location, $RegistrationService) {
-  $scope.user = {
-    firstname: '',
-    lastname: '',
-    email: '',
-    phone: ''
   };
 })
 
