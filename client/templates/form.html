@@ -1,10 +1,171 @@
 <ion-view title="Rent">
   <ion-content class="has-header padding">
    
-	<div class="padding">
-	  <form action="http://www2.rentalsinrockypoint.com/l/217652/2016-09-19/2c67" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
+	<script type="text/javascript" src="scripts/browser-compatibility.js"></script>
+  <script src="scripts/fadeshow.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<script type='text/javascript' src='scripts/select.js'></script>
+  <link href="stylesheets/layout-css-1.css" rel="stylesheet" type="text/css" />
+  <base target="_parent">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script type="text/javascript" src="datepicker/jquery.datepick.js"></script>
+  <!--Begin Sidebar Web Form-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script type="text/javascript" src="datepicker/jquery.datepick.js"></script>
+  <script type="text/javascript">
+   $(function() {
+   	$('#popupDatepicker').datepick();
+   	$('#Departure').datepick();
+   	$('#inlineDatepicker').datepick({onSelect: showDate});
+   });
+   
+   function showDate(date) {
+   	alert('The date chosen is ' + date);
+   }
+  </script>
+  <script type="text/javascript">
+   $(function() {
+   	$('#popupDatepicker2').datepick();
+   	$('#Departure2').datepick();
+   	$('#inlineDatepicker').datepick({onSelect: showDate});
+   });
+   
+   function showDate(date) {
+   	alert('The date chosen is ' + date);
+   }
+  </script>
+  
+  <style type="text/css">
+   .desktop form {
+    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    margin:auto;
+    position:relative;
+    width:160px;
+    height:770px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: none;
+    line-height: 22px;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding:10px;
+    border: 1px solid #999;
+    border: inset 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    left: -15px;
+   }
+   .required {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: none;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ef6b9d;
+   }
+   form h3 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: bold;
+    line-height: 24px;
+    font-weight: bold;
+    color: #1c75bc;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+   }
+   input {
+    width:150px;
+    display:block;
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   }
+   textarea {
+    width:150px;
+    height:100px;
+    display:block;
+    border: 1px solid #999;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   }
+   textarea.message {
+    display:block;
+   }
+   button#enviar {
+    width:100px;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    background:#09C;
+    color:#fff;
+    font-family: Tahoma, Geneva, sans-serif;
+    height:30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 1p solid #999;
+   }
+   button#enviar:hover {
+    background:#fff;
+    color:#09C;
+   }
+   textarea:focus, input:focus {
+    border: 1px solid #09C;
+    background-color: #27AAE1;
+   }
+  </style>
+  <script type="text/javascript">
+   function validateForm()
+   {
+   var e=document.forms["myForm"]["email"].value;
+   var atpos=e.indexOf("@");
+   var dotpos=e.lastIndexOf(".");
+   var x=document.forms["myForm"]["first_name"].value;
+   var y=document.forms["myForm"]["last_name"].value;
+   var z=document.forms["myForm"]["phone"].value;
+   if (x==null || x=="")
+     {
+     alert("First name must be filled out");
+     return false;
+     }
+   if (y==null || y=="")
+     {
+     alert("Last name must be filled out");
+     return false;
+     }
+   if (z==null || z=="")
+     {
+     alert("Phone number must be filled out");
+     return false;
+     }
+   if (e==null || e=="")
+     {
+     alert("Email must be filled out");
+     return false;
+     }
+   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
+     {
+     alert("Not a valid e-mail address");
+     return false;
+     }
+   }
+  </script>
+
+    <div class="column_4">
+     <form action="http://www2.rentalsinrockypoint.com/l/217652/2016-09-19/2c67" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
        <h3>Start Planning Your Trip TODAY!</h3>
-	 <span style="color:#27AAE1;">Please complete the form below to receive rates &amp; availability information.</span> 
+ <span style="color:#27AAE1;">Please complete the form below to receive rates &amp; availability information.</span> 
       <br/>
       <input type="hidden" name="oid" value="00D40000000Mq6R">
       <input type="hidden" name="retURL" value="http://rentalsinrockypoint.com/thankyou.html">
@@ -44,10 +205,11 @@
       <textarea id="00N40000003CNTl" name="00N40000003CNTl"></textarea>
       <br/>
       
-      <div style="position:static; left:-9999px; top: -9999px;">
+      <div style="position:absolute; left:-9999px; top: -9999px;">
     <label for="pardot_extra_field">Comments</label>
     <input type="text" id="pardot_extra_field" name="pardot_extra_field">
-	</div>
+</div>
+      
       
       <input type="hidden" name="recordType" value="01240000000UZsI">
       <input type="hidden" name="lead_source" value="Website">
