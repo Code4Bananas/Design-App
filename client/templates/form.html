@@ -1,220 +1,58 @@
-<ion-view title="Rent">
-  <ion-content class="has-header padding">
-   
-	<script type="text/javascript" src="http://www.rentalsinrockypoint.com/scripts/browser-compatibility.js"></script>
-  <script src="http://www.rentalsinrockypoint.com/scripts/fadeshow.js" type="text/javascript"></script>
-<script type='text/javascript' src="http://www.rentalsinrockypoint.com/scripts/select.js"></script>
-  <base target="_parent">
-  <style type="text/css"></style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-  <script type="text/javascript" src="http://www.rentalsinrockypoint.com/datepicker/jquery.datepick.js"></script>
+<ion-view title="Sign Up">
 
-  <script type="text/javascript">
-   $(function() {
-   	$('#popupDatepicker').datepick();
-   	$('#Departure').datepick();
-   	$('#inlineDatepicker').datepick({onSelect: showDate});
-   });
-   
-   function showDate(date) {
-   	alert('The date chosen is ' + date);
-   }
-  </script>
-  <script type="text/javascript">
-   $(function() {
-   	$('#popupDatepicker2').datepick();
-   	$('#Departure2').datepick();
-   	$('#inlineDatepicker').datepick({onSelect: showDate});
-   });
-   
-   function showDate(date) {
-   	alert('The date chosen is ' + date);
-   }
-  </script>
-  
-  <style type="text/css">
-   .desktop form {
-    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
-    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    margin:auto;
-    position:relative;
-    width:160px;
-    height:770px;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 12px;
-    font-style: none;
-    line-height: 22px;
-    font-weight: normal;
-    color: #000;
-    text-decoration: none;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    padding:10px;
-    border: 1px solid #999;
-    border: inset 1px solid #333;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    left: -15px;
-   }
-   .required {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 12px;
-    font-style: none;
-    line-height: 22px;
-    font-weight: normal;
-    color: #ef6b9d;
-   }
-   form h3 {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 14px;
-    font-style: bold;
-    line-height: 24px;
-    font-weight: bold;
-    color: #1c75bc;
-    text-decoration: none;
-    margin:0;
-    padding:0;
-   }
-   input {
-    width:150px;
-    display:block;
-    border: 1px solid #999;
-    height: 25px;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-   }
-   textarea {
-    width:150px;
-    height:100px;
-    display:block;
-    border: 1px solid #999;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-   }
-   textarea.message {
-    display:block;
-   }
-   button#enviar {
-    width:100px;
-    position:absolute;
-    right:20px;
-    bottom:20px;
-    background:#09C;
-    color:#fff;
-    font-family: Tahoma, Geneva, sans-serif;
-    height:30px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border: 1p solid #999;
-   }
-   button#enviar:hover {
-    background:#fff;
-    color:#09C;
-   }
-   textarea:focus, input:focus {
-    border: 1px solid #09C;
-    background-color: #27AAE1;
-   }
-  </style>
-  <script type="text/javascript">
-   function validateForm()
-   {
-   var e=document.forms["myForm"]["email"].value;
-   var atpos=e.indexOf("@");
-   var dotpos=e.lastIndexOf(".");
-   var x=document.forms["myForm"]["first_name"].value;
-   var y=document.forms["myForm"]["last_name"].value;
-   var z=document.forms["myForm"]["phone"].value;
-   if (x==null || x=="")
-     {
-     alert("First name must be filled out");
-     return false;
-     }
-   if (y==null || y=="")
-     {
-     alert("Last name must be filled out");
-     return false;
-     }
-   if (z==null || z=="")
-     {
-     alert("Phone number must be filled out");
-     return false;
-     }
-   if (e==null || e=="")
-     {
-     alert("Email must be filled out");
-     return false;
-     }
-   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
-     {
-     alert("Not a valid e-mail address");
-     return false;
-     }
-   }
-  </script>
+    <ion-content has-header="true" padding="true">
+        
+        <form action="http://www2.rentalsinrockypoint.com/l/217652/2017-07-27/2qr7b" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
+        
+        <div class="list list-inset" style="margin-top: 10px;">
 
-    <div class="list">
-     <form action="http://www2.rentalsinrockypoint.com/l/217652/2016-09-19/2c67" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
-       <h3>Start Planning Your Trip TODAY!</h3>
- <span style="color:#27AAE1;">Please complete the form below to receive rates &amp; availability information.</span> 
-      <br/>
-      <input type="hidden" name="oid" value="00D40000000Mq6R">
+            <input type="hidden" name="oid" value="00D40000000Mq6R">
       <input type="hidden" name="retURL" value="https://rocky-point-app.herokuapp.com/#/thankyou">
-      	<label class="item item-input" for="first_name">First Name</label>
-      <input maxlength="40" id="first_name" name="first_name" size="20" type="text">
-      	<label for="last_name">Last Name</label>
-      <input maxlength="80" id="last_name" name="last_name" size="20" type="text">
-      	<label for="phone">Phone</label>
-      <input maxlength="40" id="phone" name="phone" size="20" type="text">
-      	<label for="email">Email</label>
-      <input maxlength="80" id="email" name="email" size="20" type="text">Condo Of Interest:
-      	<select name="00N40000002MLbE" title="Condo Of Interest" style="width:155px">
-      		<option value="Not Sure">Select a Condo</option>
-       		<option value="Diamante 508">Diamante 508 (3 Bed 3 Bath)</option>
-       		<option value="Opalo 408">Opalo 408 (3 Bed 3 Bath)</option>
-       		<option value="Opalo 808">Opalo 808 (3 Bed 3 Bath)</option>
-       		<option value="Cristal 501">Cristal 501 (3 Bed 2 Bath)</option>
-       		<option value="Cristal 407">Cristal 407 (3 Bed 2 Bath)</option>
-       		<option value="Coronado 803">Coronado 803 (3 Bed 2 Bath)</option>
-       		<option value="Diamante 1003">Diamante 1003 (2 Bed 2 Bath)</option>
-       		<option value="Diamante 401">Diamante 401 (2 Bed 2 Bath)</option>
-       		<option value="Diamante 801">Diamante 801 (2 Bed 2 Bath)</option>
-       		<option value="Opalo 403">Opalo 403 (2 Bed 2 Bath)</option>
-       		<option value="Rubi 206">Rubi 206 (2 Bed 2 Bath)</option>
-       		<option value="Topaz 804">Topaz 804 (2 Bed 2 Bath)</option>
-       		<option value="Cristal 202">Cristal 202 (1 Bed 1 Bath)</option>
-       		<option value="Cristal 302">Cristal 302 (1 Bed 1 Bath)</option>
-       		<option value="Diamante 906">Diamante 906 (1 Bed 1 Bath)</option>
-       		<option value="Casa Vasquez">Casa Vasquez (3 Bed 3 Bath Las Conchas House)</option>
-      	</select>Arrival Date:<span class="dateInput dateOnlyInput">
-       <input id="popupDatepicker" name="00N40000002MNHk" size="12" type="text">
-        </span> Departure Date:<span class="dateInput dateOnlyInput">
-            <input id="Departure" name="00N40000002MNHp" size="12" type="text">
+      	<label class="item item-input" for="first_name">
+      <input maxlength="40" id="first_name" name="first_name" size="20" type="text" placeholder="First Name">
+		</label>
+      	<label class="item item-input" for="last_name">
+      <input maxlength="80" id="last_name" name="last_name" size="20" type="text" placeholder="Last Name">
+		</label>
+      	<label class=item item-input" for="phone">
+      <input maxlength="40" id="phone" name="phone" size="20" type="text" placeholder="Phone">
+		</label>
+      	<label class="item item-input" for="email">
+      <input maxlength="80" id="email" name="email" size="20" type="text" placeholder="Email">
+		</label>
+											     
+      	<input type="hidden" name="00N40000002MLbE" value="Diamante 508">
+      		
+      	<label class="item item-input"> <span class="dateInput dateOnlyInput">
+       <input id="popupDatepicker" name="00N40000002MNHk" size="12" type="text" placeholder="Arrival Date">
+	</span>
+	</label>
+													  
+	<label class="item item-input"> <span class="dateInput dateOnlyInput">
+            <input id="Departure" name="00N40000002MNHp" size="12" type="text" placeholder="Departure Date">
             </span>
-
-      <label for="description">Questions/Comments</label>
-      <textarea id="00N40000003CNTl" name="00N40000003CNTl"></textarea>
-      <br/>
-      
+	    </label>
+         
       <input type="hidden" name="recordType" value="01240000000UZsI">
       <input type="hidden" name="lead_source" value="Website">
-      <span style="display:none;"><input class="hidden" name="00N40000002x0ay" type="checkbox" value="1" checked /></span>
-      <input type="submit" name="submit">
-		  <h3>For a quicker response,</h3>
-		  <h6>call now: </h6>
-          <a style="color: #f62b2b" class="button button-call" href="tel:4806862280" title="Call">(480) 686-2280</a><br/>
-          	  <h3> 9am-10pm </h3>
-	  
+      <span style="display:none;">
+      <input class="hidden" name="00N40000002x0ay" type="checkbox" value="1" checked />
+      </span>
+       <br/>
+            <center><input type="submit" value="submit" /></center>
+            
+            </form>
+            
 
-     </form>
-	  </div>
-  </ion-content>
+            <div style="text-align: center; margin: 25px 0;"><h4>or</h4></div>
 
+            		 <h3>For a quicker response,</h3>
+		             <h6>call now: </h6>
+                     <center><a style="color: #f62b2b" class="button button-call" href="tel:4806862280" title="Call">(480) 686-2280</a></center><br/>
+          	         <h3> 9am-10pm </h3>
 
-    
+        </div>
+
+    </ion-content>
+
 </ion-view>
