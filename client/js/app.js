@@ -245,6 +245,96 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   controller: 'CalendarCtrl'
  })
   
+    .state('f1', {
+    url: "/f1",
+    templateUrl: "templates/f1.html",
+    controller: 'RegisterCtrl'
+  })
+
+    .state('f2', {
+    url: "/f2",
+    templateUrl: "templates/f2.html",
+    controller: 'RegisterCtrl'
+  })
+
+    .state('f3', {
+    url: "/f3",
+    templateUrl: "templates/f3.html",
+    controller: 'RegisterCtrl'
+  })  
+
+    .state('f4', {
+    url: "/f4",
+    templateUrl: "templates/f4.html",
+    controller: 'RegisterCtrl'
+  })  
+  
+      .state('f5', {
+    url: "/f5",
+    templateUrl: "templates/f5.html",
+    controller: 'RegisterCtrl'
+  })
+  
+      .state('f6', {
+    url: "/f6",
+    templateUrl: "templates/f6.html",
+    controller: 'RegisterCtrl'
+  })
+
+    .state('f7', {
+    url: "/f7",
+    templateUrl: "templates/f7.html",
+    controller: 'RegisterCtrl'
+  })
+
+    .state('f8', {
+    url: "/f8",
+    templateUrl: "templates/f8.html",
+    controller: 'RegisterCtrl'
+  })  
+
+    .state('f9', {
+    url: "/f9",
+    templateUrl: "templates/f9.html",
+    controller: 'RegisterCtrl'
+  })  
+  
+      .state('f10', {
+    url: "/f10",
+    templateUrl: "templates/f10.html",
+    controller: 'RegisterCtrl'
+  })
+  
+      .state('f11', {
+    url: "/f11",
+    templateUrl: "templates/f11.html",
+    controller: 'RegisterCtrl'
+  })
+
+    .state('f12', {
+    url: "/f12",
+    templateUrl: "templates/f12.html",
+    controller: 'RegisterCtrl'
+  })
+
+    .state('f13', {
+    url: "/f13",
+    templateUrl: "templates/f13.html",
+    controller: 'RegisterCtrl'
+  })  
+
+    .state('f14', {
+    url: "/f14",
+    templateUrl: "templates/f14.html",
+    controller: 'RegisterCtrl'
+  })  
+  
+      .state('f15', {
+    url: "/f15",
+    templateUrl: "templates/f15.html",
+    controller: 'RegisterCtrl'
+  })
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
 
@@ -294,7 +384,7 @@ $rootScope.$on('$stateNotFound',function(event, unfoundState, fromState, fromPar
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'thankyou', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'thankyou', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/home");
