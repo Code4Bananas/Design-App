@@ -1,25 +1,65 @@
 <ion-view title="Sign Up">
 
+    <script type="text/javascript">
+   function validateForm()
+   {
+   var e=document.forms["myForm"]["email"].value;
+   var atpos=e.indexOf("@");
+   var dotpos=e.lastIndexOf(".");
+   var x=document.forms["myForm"]["first_name"].value;
+   var y=document.forms["myForm"]["last_name"].value;
+   var z=document.forms["myForm"]["phone"].value;
+   if (x==null || x=="")
+     {
+     alert("First name must be filled out");
+     return false;
+     }
+   if (y==null || y=="")
+     {
+     alert("Last name must be filled out");
+     return false;
+     }
+   if (z==null || z=="")
+     {
+     alert("Phone number must be filled out");
+     return false;
+     }
+   if (e==null || e=="")
+     {
+     alert("Email must be filled out");
+     return false;
+     }
+   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
+     {
+     alert("Not a valid e-mail address");
+     return false;
+     }
+   }
+  </script>
+    
     <ion-content has-header="true" padding="true">
         
         <form action="http://www2.rentalsinrockypoint.com/l/217652/2016-09-19/2c67" name="myForm" onsubmit="return validateForm();" method="POST" id="plantrip">
         
         <div class="list list-inset" style="margin-top: 10px;">
 
+            <input type="hidden" name="oid" value="00D40000000Mq6R">
+            <input type="hidden" name="retURL" value="https://rocky-point-app.herokuapp.com/#/thankyou">
+            
             <label class="item item-input">
-                <input type="text" placeholder="First Name" ng-model="user.name">
+                <input type="text" placeholder="First Name" id="first_name">
             </label>
             
             <label class="item item-input">
-                <input type="text" placeholder="Last Name" ng-model="user.name">
+                <input type="text" placeholder="Last Name" id="last_name">
             </label>
 
             <label class="item item-input">
-                <input type="text" placeholder="Phone Number" ng-model="user.phone">
+                <input type="text" placeholder="Phone Number" id="phone">
             </label>
             
             <label class="item item-input">
-                <input type="text" placeholder="Email" ng-model="user.email">
+                <input type="text" placeholder="Email" id="email">
             </label>
             
             <label class="item item-input">
