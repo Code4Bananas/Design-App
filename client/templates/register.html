@@ -9,20 +9,34 @@
         <div class="list list-inset" style="margin-top: 10px;">
 
             <label class="item item-input">
-                <input type="text" placeholder="Full Name" ng-model="user.name">
+                <input type="text" placeholder="First Name" ng-model="user.name">
+            </label>
+            
+            <label class="item item-input">
+                <input type="text" placeholder="Last Name" ng-model="user.name">
             </label>
 
+            <label class="item item-input">
+                <input type="text" placeholder="Phone Number" ng-model="user.phone">
+            </label>
+            
             <label class="item item-input">
                 <input type="text" placeholder="Email" ng-model="user.email">
             </label>
-
+            
             <label class="item item-input">
-                <input type="password" placeholder="Password" ng-model="user.password">
+                <input type="text" placeholder="Condo" ng-model="user.condo">
             </label>
-
+            
             <label class="item item-input">
-                <input type="password" placeholder="Re-enter password" ng-model="user.password2">
+                <input type="text" placeholder="Arrival Date" ng-model="user.arrive">
             </label>
+            
+            <label class="item item-input">
+                <input type="text" placeholder="Departure Date" ng-model="user.depart">
+            </label>            
+
+            
 
             <button class="button button-block button-stable" ng-click="register()">
                 Sign Up
