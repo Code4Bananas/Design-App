@@ -3,34 +3,16 @@
 	<ion-content has-header="true" padding="true">
         
 	<head>
-		<meta charset="utf-8">
-		<title>Pardot iFrame Resizing</title>
-		<meta name="description" content="iFrame message passing test">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<style type="text/css">
-			iframe {border:0;}
-		</style>
+
+		<script>
+  		function resizeIframe(obj) {
+    		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  		}
+		</script>
 	</head>
 	<body>
-		<iframe src="https://go.pardot.com/l/217652/2016-08-03/369i/" width="100%" scrolling="yes" id="sizetracker"></iframe>
+		<iframe src="https://go.pardot.com/l/217652/2016-08-03/369i/" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
 	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.3/iframeResizer.min.js"></script>
-		<script type="text/javascript">
-		  // Create browser compatible event handler.
-		  var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-		  var eventer = window[eventMethod];
-		  var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-		  // Listen for a message from the iframe.
-		  eventer(messageEvent, function(e) {
-		    if (isNaN(e.data)) return;
- 
-		    // replace #sizetracker with what ever what ever iframe id you need
-		    document.getElementById('sizetracker').style.height = e.data + 'px';
- 
-		  }, false);
-		</script>
 		<br/>
 		
                         <div style="text-align: center; margin: 25px 0;"><h4>or</h4></div>
