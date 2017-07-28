@@ -1,37 +1,8 @@
 <ion-view title="I Want Condo">
 
 	<ion-content has-header="true" padding="true">
-        
-	<head>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-		<title>Using the browser's scrollbar to scroll the content in an iframe</title>
-
-		<script>
-			window.onscroll = function()
-			{
-				frames.ifr.document.documentElement.scrollTop = window.pageYOffset;
-				frames.ifr.document.body.scrollTop = window.pageYOffset; // Google Chrome, Safari, documents without valid doctype
-			}
-		</script>
-
-		<script>
-			window.onresize=function()
-			{
-				document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'
-			}
-		</script>
-
-	</head>
-	<body>
-		
-		<iframe name="ifr" src="https://go.pardot.com/l/217652/2016-08-03/369i/" scrolling="no"></iframe>
-
-		
-
-
-	</body>
+		<iframe src="https://go.pardot.com/l/217652/2016-08-03/369i/"></iframe>
 
 	</ion-content>
 
