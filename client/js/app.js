@@ -82,6 +82,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   templateUrl: "templates/1B3.html",
   controller: '1B3Ctrl'
   })
+  
+  .state('1B4', {
+  url: "/1B4",
+  templateUrl: "templates/1B4.html",
+  controller: '1B3Ctrl'
+  })
 
   .state('2B1', {
   url: "/2B1",
@@ -152,6 +158,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('3B6', {
   url: "/3B6",
   templateUrl: "templates/3B6.html",
+  controller: '3B6Ctrl'
+  })
+  
+  .state('3B7', {
+  url: "/3B7",
+  templateUrl: "templates/3B7.html",
+  controller: '3B6Ctrl'
+  })
+  
+  .state('3B8', {
+  url: "/3B8",
+  templateUrl: "templates/3B8.html",
   controller: '3B6Ctrl'
   })
   
@@ -242,6 +260,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('C15', {
   url: "/C15",
   templateUrl: "templates/C15.html",
+  controller: 'CalendarCtrl'
+ })
+  
+  .state('C16', {
+  url: "/C16",
+  templateUrl: "templates/C16.html",
+  controller: 'CalendarCtrl'
+ })
+  
+  .state('C17', {
+  url: "/C17",
+  templateUrl: "templates/C17.html",
+  controller: 'CalendarCtrl'
+ })
+  .state('C18', {
+  url: "/C18",
+  templateUrl: "templates/C18",
   controller: 'CalendarCtrl'
  })
   
@@ -384,7 +419,7 @@ $rootScope.$on('$stateNotFound',function(event, unfoundState, fromState, fromPar
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'thankyou', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', '1B1', '1B2', '1B3', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6'].indexOf(toState.name) === -1) {
+    if (['home', 'login', 'logout', 'register', 'one', 'two', 'three', 'all', 'form', 'thankyou', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', '1B1', '1B2', '1B3', '1B4', '2B1', '2B2', '2B3', '2B4', '2B5', '2B6', '3B1', '3B2', '3B3', '3B4', '3B5', '3B6', '3B7', '3B8'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/home");
