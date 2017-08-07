@@ -32,7 +32,7 @@ buttons, respectively at the bottom.
 
 **Form page screenshot**
 
-<img src="docs/Screenshots/Screenshot_2017-08-07-10-54-15.png: />
+<img src="docs/Screenshots/Screenshot_2017-08-07-10-54-15.png" />
 
 ## Architecture
 
