@@ -1,4 +1,4 @@
-# Rental App made through Heroku using the `Heroku Mobile Template`
+# Rental App made using the `Heroku Mobile Template`
 
 This application was made for the purpose of renting condos in Rocky Point.
 The mobile app itself is a hybrid AngularJS app composed of HTML, CSS and Javascript. The
