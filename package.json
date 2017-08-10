@@ -1,5 +1,5 @@
 {
-  "name": "quizlive",
+  "name": "Rentals in Rocky Point",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -27,11 +27,11 @@
     "load_questions": "node server/load_questions.js"
   },
   "author": {
-    "name":"Scott Persinger",
-    "email":"scottp@heroku.com",
-    "url":"https://twitter.com/persingerscott"
+    "name":"Matt Macaspac",
+    "email":"mcspc96@hotmail.com",
+    "url":"https://github.com/Code4Bananas"
   },
-  "repository":"https://github.com/heroku/mobile-template1",
-  "homepage":"https://github.com/heroku/mobile-template1",
+  "repository":"https://github.com/Code4Bananas/Design-App",
+  "homepage":"https://github.com/Code4Bananas/Design-App",
   "license": "MIT"
 }
