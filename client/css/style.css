@@ -77,7 +77,7 @@
 
 /* home screen */
 .home-content {
-    background: url(/img/splash-background.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/Code4Bananas/Design-App/master/client/img/splash-background.png) no-repeat;
     background-size: cover;
 }
 
