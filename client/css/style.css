@@ -76,6 +76,7 @@
 
 .button.button-other {
     width: 80%;
+    text-align: center;
     margin: 0 auto;
     border:1px solid #25729a;
     -webkit-border-radius: 3px;
